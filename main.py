@@ -1,18 +1,35 @@
-# Loops - for loops
+# Loops - while loop
 
-# Loops in lists
-fruits = ['apple', 'orange', 'banana', 'strawberry']
-for fruit in fruits:
-    print(fruit)
+# print nos 1 to 6
 
-# Loops with the use of range(start, stop ,step(default is 1))
-for i in range(0, 10):
+i = 1
+while i < 7:
+    print(i)  # 1, 2, 3,   6
+    i = i + 1
+
+
+# break
+i = 1
+while i < 7:
+    if i == 3:
+        break
+    print(i)  # 1, 2, 3,   6
+    i = i + 1
+
+# continue
+i = 0
+while i < 6:
+    i = i + 1
+    if i == 3:
+        continue
     print(i)
 
-# Loops with the use of range(start(default is 0), stop, step(default is 1))
-for i in range(10):
+# else
+i = 1
+while i < 7:
+    # if i == 3:
+    #     break
     print(i)
-
-# Loops with the use of range(start, stop, step)
-for i in range(1, 11, 2):
-    print('code band')
+    i = i + 1
+else:
+    print('while completed successfully.')
