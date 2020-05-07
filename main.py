@@ -1,12 +1,9 @@
-# Functions
+# Default arguments in functions
 
 
-def add(a, b):
-    return a+b
+def print_name(name='Jane Doe'):
+    print("Hello", name)
 
 
-print(add(4, 6))
-
-print(add(5, 11))
-
-print(add(2, 2))
+print_name()
+print_name('Code Band')
